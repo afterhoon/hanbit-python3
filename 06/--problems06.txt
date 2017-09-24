@@ -1,0 +1,94 @@
+1. Choose something different result.
+    1) not False
+    2) not 0
+    3) not None
+    4) not 'ABC'
+    
+    a) 1
+    
+2. Choose whether the result is True.
+    1) True and False
+    2) True or not False
+    3) False and not False
+    
+    a) 2
+    
+3. What is following code's result?
+    a = 0
+    if a:
+        print("1")
+    else:
+        print("2")
+        
+    a) 2
+    
+4. Create a program to print the result as follows
+    *
+    **
+    ***
+    ****
+    *****
+    
+    a) 
+        for i in range(1, 6):
+            for j in range(i):
+                print('*', end='')
+            print('')
+            
+5. Create a program to print the result as follows
+    *****
+    ****
+    ***
+    **
+    *
+    
+    a)
+        for i in range(5, 0, -1):
+            for j in range(i):
+                print('*', end='')
+            print('')
+            
+6. Replace 4 and 5 with 'while' instead of 'for'
+    a) problem 4
+        count = 0
+        while count < 5:
+            count = count + 1
+            i = 0
+            while i < count:
+                i = i + 1
+                print('*', end='')
+            print('')
+            
+    a) problem 5
+        count = 5
+        while count > 0:
+            count = count - 1
+            i = 0
+            while i < count + 1:
+                i = i + 1
+                print('*', end='')
+            print('')
+            
+7. Create a program to print the result as follows
+    Enter the number of repetitions : -10
+    You can not a number less than or equal a 0.
+    
+    Enter the number of repetitions : 5
+    *
+    **
+    ***
+    ****
+    *****
+    
+    a)
+        print("Enter the number of repetitions : ")
+        repeat = int(input())
+        
+        if repeat > 0:
+            print('')
+            for i in range(1, repeat + 1):
+                for j in range(i):
+                    print('*', end='')
+                print('')
+        else:
+            print("You can not a number less than or equal a 0.")
